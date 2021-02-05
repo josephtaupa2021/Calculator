@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        if (Number.isInteger(num1) == false) {
+            // alert('Wrong input. Enter a number value');
+            let num1 = parseInt(prompt('Enter a number (int only)'));
+        } else {
+            let num2 = parseInt(prompt('Enter another number'));
+        }
+
+        let num2 = parseInt(prompt('Enter another number'));
+        if (Number.isInteger(num2) == true) {
+
+        } else {
+            alert('Wrong input. Enter a number value')
+        }
+
+        let op = prompt(`What do you want to do?
+                        Add (+) 
+                        Minus (-) 
+                        Multiply (*)
+                        Divide (/)
+
+                        Note: Enter (+, -, * or / to select operation.)
+                        `);
+
+        if (op == '+') {
+            alert(num1 + num2);
+        } else {
+            if (op == '-') {
+                alert(num1 - num2);
+            } else {
+                if (op == '*') {
+                    alert(num1 * num2);
+                } else {
+                    if (op == '/') {
+                        alert(num1 / num2);
+                    } else {
+                        alert('Select an operation')
+                    }
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>
